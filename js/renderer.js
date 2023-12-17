@@ -2,11 +2,11 @@ const render = (articles) => {
   document.getElementById("mainWrapper").innerHTML = '';
   articles.forEach(article => {
     const articleCard = `
-      <a class="articleCard shadow border border-light-subtle" href=${article.url} target='_blank'>
-        <div class="articleImageWrapper">
-          <img class="articleImage" src="${article.urlToImage}"/>
+      <a class="articleCard d-flex flex-column shadow border rounded border-light-subtle text-decoration-none text-black overflow-hidden" href=${article.url} target='_blank'>
+        <div class="articleImageWrapper position-relative bg-primary-subtle">
+          <img class="articleImage position-absolute" src="${article.urlToImage}"/>
         </div>
-        <div class="articleDetailWrapper">
+        <div class="articleDetailWrapper p-3">
           <h5>${article.title}</h5>
           <small>${article.content.split("[")[0]}</small>
         </div>

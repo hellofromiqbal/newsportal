@@ -1,4 +1,4 @@
-import { render, renderNotFound } from "./renderer.js";
+import { render } from "./renderer.js";
 
 const apiUrl = "https://newsapi.org/v2/everything";
 const apiKey = 'd4727282328646e78f20a614cb5bd9d0';
